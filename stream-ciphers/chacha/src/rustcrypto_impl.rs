@@ -1,8 +1,8 @@
-use byteorder::{ByteOrder, LE};
-use core::cmp;
 use crate::guts::generic_array::typenum::{Unsigned, U10, U12, U24, U32, U4, U6, U8};
 use crate::guts::generic_array::{ArrayLength, GenericArray};
 use crate::guts::{ChaCha, Machine, BLOCK, BLOCK64, BUFSZ};
+use byteorder::{ByteOrder, LE};
+use core::cmp;
 pub use stream_cipher;
 use stream_cipher::{LoopError, NewStreamCipher, SyncStreamCipher, SyncStreamCipherSeek};
 
